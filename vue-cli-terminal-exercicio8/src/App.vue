@@ -4,8 +4,11 @@
     <h1 v-else-if="state === 'error'">Error na API</h1>
     <h1 v-else-if="messages.length === 0">Sem dados disponíveis na API</h1>
     <h1 v-else>{{ messages }}</h1>
-  <br>
+    <br />
     <h1 v-show="true">DIRETIVAS v-show</h1>
+    <a v-bind:href="url">Site do Google</a>
+    <br>
+    <a :href="url2">Site do Google</a>
   </div>
 </template>
 
@@ -18,6 +21,9 @@ export default {
       state: "loading",
       messages: [],
       show: true,
+      url: "www.google.com.br",
+       url2: "www.google.com.br",
+
     };
   },
 };
