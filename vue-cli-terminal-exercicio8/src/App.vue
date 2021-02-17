@@ -1,14 +1,18 @@
 <template>
   <div id="app">
+    <h1>PROPS E DIRETIVAS</h1>
+    <H2> V-BIND , V-IF, V-SHOW</H2>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  componen
-}
+  name: "App",
+  components: {},
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style>
